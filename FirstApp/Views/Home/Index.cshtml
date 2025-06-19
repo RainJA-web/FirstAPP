@@ -1,0 +1,85 @@
+﻿@{
+    ViewData["Title"] = "Thông tin cá nhân";
+}
+
+<!-- Font Awesome (icon) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-p0XhS3P/..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- AOS: Animation on Scroll -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background: #f5f8ff;
+    }
+
+    .profile-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 25px;
+        border-radius: 15px;
+        background: white;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        max-width: 800px;
+        margin: 40px auto;
+        transition: transform 0.3s ease;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #00bcd4;
+        transition: all 0.3s ease;
+        box-shadow: 0 0 20px rgba(0, 188, 212, 0.4);
+    }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(0, 188, 212, 0.7);
+        }
+
+    .profile-info p {
+        font-size: 17px;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .profile-info i {
+        color: #00bcd4;
+        min-width: 20px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+    }
+</style>
+
+<h2 data-aos="fade-down">Thông tin cá nhân</h2>
+
+<div class="profile-wrapper" data-aos="zoom-in">
+    <!-- Avatar -->
+    <div>
+        <img src="~/images/avatar1.jpg" alt="Avatar" class="profile-img">
+    </div>
+
+    <!-- Info -->
+    <div class="profile-info">
+        <p><i class="fa-solid fa-user"></i><strong>Họ và tên:</strong> Phan Minh Thuận</p>
+        <p><i class="fa-solid fa-id-card"></i><strong>MSSV:</strong> 2200010286</p>
+        <p><i class="fa-solid fa-cake-candles"></i><strong>Ngày sinh:</strong> 06/09/2004</p>
+        <p><i class="fa-solid fa-envelope"></i><strong>Email:</strong> thugoodcat@gmail.com</p>
+        <p><i class="fa-solid fa-headphones"></i><strong>Sở thích:</strong> Lập trình, nghe nhạc, đọc sách</p>
+    </div>
+</div>
